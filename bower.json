@@ -1,0 +1,20 @@
+{
+  "name": "comfortsense",
+  "version": "0.1.0",
+  "homepage": "https://github.com/belafontestudio/comfortsense-microwebsite",
+  "authors": [
+    "nOttenga <ottenga.nic@gmail.com>"
+  ],
+  "description": "comfortsense-miniwebsite",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
