@@ -33,8 +33,8 @@
     },
     "owl-carousel": {
       "main": [
-        "./owl-carousel/owl.carousel.min.js",
-        "./owl-carousel/owltheme.css"
+        "./owl-carousel/owl.carousel.js",
+        "./owl-carousel/owl.theme.css"
       ]
     }
   }
