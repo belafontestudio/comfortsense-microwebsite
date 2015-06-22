@@ -8,7 +8,6 @@ exports.config =
 
             order:
                 before: ['bower_components/jquery/dist/jquery.js']
-                after: ['bower_components/swag/lib/swag.js']
 
             pluginHelpers: 'js/app.js'
 
@@ -24,7 +23,7 @@ exports.config =
         jadePages:
             pattern: /^app\/pages\/.*\.jade$/
             destination: (path) ->
-                path.replace /^app\/(.*)\.jade$/, "$1.html"
+                path.replace /^public\/(.*)\.jade$/, "$1.html"
             jade:
                 doctype: "html"
             htmlmin: false

@@ -22,6 +22,8 @@
   "dependencies": {
     "jade-pages-brunch": "^1.7.9",
     "jeet": "^6.1.2",
-    "rupture": "^0.6.1"
+    "rupture": "^0.6.1",
+    "stylus": "^0.51.1",
+    "stylus-type-utils": "0.0.3"
   }
 }
