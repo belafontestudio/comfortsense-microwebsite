@@ -20,13 +20,13 @@ exports.config =
             joinTo: 'js/app.js'
 
     plugins:
-        jadePages:
-            pattern: /^app\/pages\/.*\.jade$/
-            destination: (path) ->
-                path.replace /^app\/(.*)\.jade$/, "$1.html"
-            jade:
-                doctype: "html"
-            htmlmin: false
+       jadePages:
+           pattern: /^app\/.*\.jade$/
+           destination: (path) ->
+               path.replace /^app\/(.*)\.jade$/, "$1.html"
+           jade:
+               doctype: "html"
+           htmlmin: false
 
         stylus:
             plugins: ['jeet','rupture','stylus-type-utils']
