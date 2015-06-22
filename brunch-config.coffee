@@ -23,7 +23,7 @@ exports.config =
         jadePages:
             pattern: /^app\/pages\/.*\.jade$/
             destination: (path) ->
-                path.replace /^public\/(.*)\.jade$/, "$1.html"
+                path.replace /^app\/(.*)\.jade$/, "$1.html"
             jade:
                 doctype: "html"
             htmlmin: false
