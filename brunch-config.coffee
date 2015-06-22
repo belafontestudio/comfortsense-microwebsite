@@ -1,10 +1,11 @@
 exports.config =
     modules:
         wrapper: false
+        definition: false
     files:
         javascripts:
             joinTo:
-                'js/app.js': /^(vendor|bower_components|app)/
+                'js/app.js': /^(bower_components|app)/
 
             order:
                 before: ['bower_components/jquery/dist/jquery.js']
@@ -13,8 +14,8 @@ exports.config =
 
         stylesheets:
             joinTo:
-                'css/app.css': /^(app|vendor)/
-                'css/vendor.css': /^(vendor|bower_components)/
+                'css/app.css': /^(app)/
+                'css/vendor.css': /^(bower_components)/
 
         templates:
             joinTo: 'js/app.js'
@@ -42,4 +43,4 @@ exports.config =
             smushit: no
 
     conventions:
-        assets: /(assets|vendor\/assets|font)/
+        assets: /(assets\/assets|font)/

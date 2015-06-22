@@ -21,16 +21,21 @@
     "jquery": "~2.1.4",
     "owl-carousel": "~1.3.2",
     "enquire": "~2.1.2",
-    "sidr": "~1.2.1",
     "normalize.css": "~3.0.3",
     "headhesive": "~1.2.4",
     "jpanelmenu": "~1.4.1"
   },
   "overrides": {
-   "jpanelmenu": {
-     "main": [
-       "./jquery.jpanelmenu.js"
-     ]
-   }
- }
+    "jpanelmenu": {
+      "main": [
+        "./jquery.jpanelmenu.js"
+      ]
+    },
+    "owl-carousel": {
+      "main": [
+        "./owl-carousel/owl.carousel.min.js",
+        "./owl-carousel/owltheme.css"
+      ]
+    }
+  }
 }
