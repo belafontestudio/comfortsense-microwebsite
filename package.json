@@ -20,6 +20,7 @@
     "event-stream": "^3.1.4"
   },
   "dependencies": {
+    "jade-pages-brunch": "^1.7.9",
     "jeet": "^6.1.2",
     "rupture": "^0.6.1"
   }
