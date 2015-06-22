@@ -16,5 +16,13 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery-smint": "*",
+    "jquery": "~2.1.4",
+    "owl-carousel": "~1.3.2",
+    "enquire": "~2.1.2",
+    "sidr": "~1.2.1",
+    "normalize.css": "~3.0.3"
+  }
 }

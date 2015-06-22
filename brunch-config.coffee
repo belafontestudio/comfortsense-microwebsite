@@ -22,7 +22,7 @@ exports.config =
 
     plugins:
         jadePages:
-            pattern: /^app\/.*\.jade$/
+            pattern: /^app\/pages\/.*\.jade$/
             destination: (path) ->
                 path.replace /^app\/(.*)\.jade$/, "$1.html"
             jade:
