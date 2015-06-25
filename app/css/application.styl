@@ -1,45 +1,86 @@
 
 @import '_base'
+@import '_menu'
 
-
+body
+  //lost-utility edit
 
 // Init
 
 
+.ham
+  width 100%
+  background dark_bg
 
-.gallery-hero
-  text-align center
-  padding 20px
-  .gallery-hero-text
-    color white
-    h1#hero-main-text
-      font-size 2em
-      font-weight normal
-      span
-        &:first-child
-          color light_blue
-          font-weight bold
-        &:last-child
-          font-weight bold
-    h1.hero-second-text
-      font-weight normal
-      font-size 2em
-      span
-        font-size .5em
-        &:last-child
-          font-weight bold
-          font-size 1em
+  #ham
+    padding 20px
+    float left
+  #ham-logo
+    padding 15px
+    position relative
+    left 20px
+
+.main-menu
+  background-color dark_bg
+  display none
+  ul
+    margin 0
+    padding 10px
+    list-style none
+    li
+      padding 10px 10px
+      cursor pointer
+      text-transform uppercase
+    li.active
+      background rgba(52, 73, 94, 1.0)
+      border-bottom 4px solid light_blue
+
+
+.gallery-hero-wrapper
+  background url(../images/hero-texture.png)
+  //background-color rgba(0,0,0,.4)
+  .gallery-hero
+    text-align center
+    padding 40px 20px
+
+    .gallery-hero-img
+      width 40%
+      margin 0 auto
+      padding-top 40px
+    .gallery-hero-text
+      color white
+      h1
+        line-height 30px
+      h1#hero-main-text
+        font-size 2em
+        font-weight 200
+        span
+          &:first-child
+            color light_blue
+            font-weight bold
+          &:last-child
+            font-weight bold
+      h1.hero-second-text
+        font-weight 200
+        font-size 2em
+        span
+          font-size .5em
+          &:last-child
+            font-weight bold
+            font-size 1em
 
 
 
 
 .ilprogetto-wrapper
+  background url(../images/hero-texture.png)
   padding 20px
   text-align center
       color white
   h2
+    line-height 30px
     font-size 1.8em
-    font-weight normal
+    font-weight 200
     span
       &:first-child
         color light_blue
@@ -54,16 +95,17 @@
 
 .living-lab-carousel
   background dark_blue
-  font-weight normal
+  font-weight 200
+  margin-top -10px
   .living-lab-section
     padding 20px
     h2
-      font-weight normal
+      font-weight 200
       color light_blue
       span
         font-weight bold
     h3
-      font-weight normal
+      font-weight 200
     p
       font-weight 200
 
@@ -76,7 +118,7 @@
   .ecosystem-text
     h2
       color light_blue
-      font-weight normal
+      font-weight 200
       span
         color gray
         span
@@ -94,10 +136,11 @@
       display none
 
   .app-text
+    background url(../images/app-bg.jpg) no-repeat center
     padding 20px
     text-align center
     h2
-      font-weight normal
+      font-weight 200
       color light_blue
       span
         font-weight bold
@@ -109,7 +152,7 @@
   text-align center
   h2
     color light_blue
-    font-weight normal
+    font-weight 200
 
 
 
@@ -137,6 +180,8 @@
 
 
 /////////////// >600
+
+//+above(600px)
 
 
 

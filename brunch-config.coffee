@@ -30,7 +30,13 @@ exports.config =
             htmlmin: false
 
         stylus:
-            plugins: ['jeet','rupture','stylus-type-utils']
+            plugins: ['rupture','stylus-type-utils']
+
+        postcss:
+          processors: [
+            require('autoprefixer')(),
+            require('lost')
+          ]
 
         autoReload:
             enabled:
