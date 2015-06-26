@@ -6,22 +6,12 @@ $(document).ready(function() {
   initApp();
 
 
-
-
-
+  $('.header').stickyNavbar();
 
 
 });
 
-// Set options
-var options = {
-    offset: 700,
-    classes: {
-        clone:   'banner--clone',
-        stick:   'banner--stick',
-        unstick: 'banner--unstick'
-    }
-};
+
 
 // Initialise with options
 //var banner = new Headhesive('.ham', options);
@@ -42,14 +32,19 @@ enquire.register("screen and (min-width: 600px)", {
 
   match: function(){
     jPM.off();
-  },
-  unmatch: function(){
-    jPM.on();
   }
 
 
 });
 
+enquire.register("screen and (max-width: 599px)", {
+
+  match: function(){
+    jPM.on();
+  }
+
+
+});
 
 
 

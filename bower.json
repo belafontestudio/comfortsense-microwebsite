@@ -22,13 +22,13 @@
     "owl-carousel": "~1.3.2",
     "enquire": "~2.1.2",
     "normalize.css": "~3.0.3",
-    "headhesive": "~1.2.4",
-    "jpanelmenu": "~1.4.1"
+    "jpanelmenu": "~1.4.1",
+    "stickyNavbar.js": "~1.3.0"
   },
   "overrides": {
     "jpanelmenu": {
       "main": [
-        "./jquery.jpanelmenu.js"
+        "./jquery.jpanelmenu-legacy.js"
       ]
     },
     "owl-carousel": {
