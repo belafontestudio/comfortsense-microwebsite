@@ -6,9 +6,8 @@ $(document).ready(function() {
   initApp();
   livingResize();
 
-  $('.header').stickyNavbar();
 
-
+  $('#sticky').stickyNavbar();
 });
 
 
@@ -44,8 +43,11 @@ enquire.register("screen and (max-width: 599px)", {
 
   match: function(){
 
+    if($('.gallery-hero').data('owlCarousel')){
 
-    $('.gallery-hero').data('owlCarousel').destroy();
+      $('.gallery-hero').data('owlCarousel').destroy()
+    }
+  //  $('.gallery-hero').data('owlCarousel').destroy();
   }
 
 
@@ -55,7 +57,7 @@ enquire.register("screen and (min-width: 900px)", {
 
   match: function(){
     jPM.off();
-    $('#sticky').stickyNavbar();
+
 
 
 

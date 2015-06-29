@@ -84,6 +84,7 @@
 
 
 
+
 .ham
   width 100%
   background dark_bg
@@ -102,15 +103,28 @@
 .main-menu
   background-color dark_bg
   display none
+  a
+    text-decoration none
+    display block
+    color white
+    padding 10px 10px
   ul
     margin 0
     padding 10px
     list-style none
     li
-      padding 10px 10px
       cursor pointer
       text-transform uppercase
-    li.active
+    #logo
+      padding 20px 10px
+
+    a
+      &:hover
+        background rgba(52, 73, 94, 1.0)
+        border-bottom 4px solid light_blue
+
+    .active
+      transform: translate3d(0, 0, 0);
       background rgba(52, 73, 94, 1.0)
       border-bottom 4px solid light_blue
 
@@ -120,7 +134,7 @@
 
   #menu
     background dark_bg
-    height 83px
+
     text-align center
 
     *
@@ -144,20 +158,17 @@
 
       display block
       ul
+        padding 0
 
         li
           display inline-block
           vertical-align middle
-          &:hover
-            background rgba(52, 73, 94, 1.0)
-            border-bottom 4px solid light_blue
+
 
 
 
 +above(1050px)
   #menu
-
-    height 85px
 
     #sticky
       background-color dark_bg
@@ -169,16 +180,13 @@
       display block
       ul
         margin 0
-        padding 10px
         list-style none
         #logo
-          padding-right 200px
+          padding-right 20px
+          text-align left
         li
           display inline-block
           vertical-align middle
-          padding 10px 10px
+          padding 0
           cursor pointer
           text-transform uppercase
-        li.active
-          background rgba(52, 73, 94, 1.0)
-          border-bottom 4px solid light_blue
