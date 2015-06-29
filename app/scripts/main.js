@@ -4,7 +4,7 @@ $(document).ready(function() {
 
   initLiving();
   initApp();
-
+  livingResize();
 
   $('.header').stickyNavbar();
 
@@ -12,13 +12,10 @@ $(document).ready(function() {
 });
 
 
+$(window).resize(function() {
 
-// Initialise with options
-//var banner = new Headhesive('.ham', options);
-
-// Headhesive destroy
-// banner.destroy();
-
+  livingResize();
+});
 
 
 
@@ -31,7 +28,13 @@ var jPM = $.jPanelMenu({
 enquire.register("screen and (min-width: 600px)", {
 
   match: function(){
-    jPM.off();
+
+
+    initGalleryHero();
+
+
+
+
   }
 
 
@@ -40,13 +43,38 @@ enquire.register("screen and (min-width: 600px)", {
 enquire.register("screen and (max-width: 599px)", {
 
   match: function(){
-    jPM.on();
+
+
+    $('.gallery-hero').data('owlCarousel').destroy();
   }
 
 
 });
 
+enquire.register("screen and (min-width: 900px)", {
 
+  match: function(){
+    jPM.off();
+    $('#sticky').stickyNavbar();
+
+
+
+
+  }
+
+
+});
+
+enquire.register("screen and (max-width: 899px)", {
+
+  match: function(){
+    jPM.on();
+
+
+  }
+
+
+});
 
 
 
@@ -78,4 +106,12 @@ function initApp(){
     itemsScaleUp : false
 
   });
+}
+
+
+function livingResize(){
+  var altezzaLiving = $('.living-lab-carousel').height();
+
+  $('.living-lab-image').height(altezzaLiving);
+  console.log(altezzaLiving)
 }

@@ -20,6 +20,11 @@ body
       width 40%
       margin 0 auto
       padding-top 40px
+      vertical-align middle
+      #top-low
+        position relative
+        top 80px
+
     .gallery-hero-text
       color white
       h1
@@ -65,7 +70,9 @@ body
 
 
 
-
+.living-lab-image
+  background url(../images/ll.png) no-repeat center
+  background-size cover
 .living-lab-carousel
   background dark_blue
   font-weight 200
@@ -123,9 +130,12 @@ body
 
 .partners-wrapper
   text-align center
+  padding 50px
   h2
     color light_blue
     font-weight 200
+  div
+    padding 20px
 
 
 
@@ -154,16 +164,166 @@ body
 
 /////////////// >600
 
-//+above(600px)
++above(600px)
+
+
+  span
+    display inline-block
+
+  .gallery-hero-wrapper
+    .gallery-hero
+      text-align center
+      padding 40px 0
+      text-align right
+
+      .gallery-hero-img
+        lost-column 5/10
+        position relative
+        right 30px
+        padding-top 40px
+      .gallery-hero-text
+        lost-column 5/10
+        max-width 400px
+        text-align left
+        padding-top 100px
+        color white
 
 
 
 
 
+  .ilprogetto-wrapper
+    lost-utility: clearfix;
+    position relative
+    z-index 101
+    .center
+      lost-center 800px
+      div:first-child
+        lost-column 4/10
+        h2
+          span
+            &:last-child
+              display inline-block
+
+      div:last-child
+        lost-column 6/10
+
+
+
+  .living-lab-wrapper
+    width 100%
+    lost-utility: clearfix;
+    .living-lab-image
+      lost-column 8/12 2 0px
+      overflow hidden
+      margin 0
+      min-height 100%
+      position relative
+      z-index 100
+      box-shadow: 2px 0 5px 2px rgba(0,0,0,.4);
+      img
+        height 100%
+        max-width none
+        vertical-align bottom
+    .living-lab-carousel
+      lost-column 4/12 2 0px
+
+      margin-top 0
+      .living-lab-section
+        padding 20px
+        h2
+          font-weight 200
+          color light_blue
+          span
+            font-weight bold
+        h3
+          font-weight 200
+        p
+          font-weight 200
+
+  .ecosystem-wrapper
+    padding 60px 20px
+    text-align left
+    lost-center 1024px
+    lost-utility: clearfix;
+    .ecosystem-text
+      lost-column 4/12
+    .ecosystem-image
+      lost-column 7/12
+      lost-move 1/12
+
+
+  .app-wrapper
+    background url(../images/app-bg.jpg) no-repeat
+    background-size cover
+    height 500px
+
+    .app-device
+      text-align left
+      lost-column 5/12
+      height 100%
+      transform scale(.7)
+      position relative
+      bottom 30px
+      .app-phone
+        display block
+        position absolute
+        width 297px
+      .app-carousel
+        position relative
+        top 70px
+        left 19px
+        width 257px
+    .app-text
+      background none
+      padding 20px
+      text-align left
+      padding-top 100px
+
+
+    .owl-pagination
+      position: relative;
+      bottom: 45px;
+      background-color: black;
 
 
 
 
+
+.partners-wrapper
+  height 100%
+  lost-center 900px
+  div
+    padding 0
+  .partners-grid-first
+    padding 0
+    div
+      lost-waffle 1/3
+  .partners-grid-second
+    padding 0
+    div
+      lost-waffle 1/4
+
+  img
+    display inline-block
+
+    vertical-align middle
+
+.footer-wrapper
+
+  text-align auto
+  lost-utility: clearfix;
+
+  #design
+    lost-column 5/10
+    text-align left
+  #contact
+    lost-column 5/10
+    text-align right
+
+  p
+    *
+      display inline-block
 /////////////// > 768
 
 
@@ -175,14 +335,38 @@ body
 
 
 
-/////////////// > 1100
+/////////////// > 100
+
+
++above(1000px)
 
 
 
+  .app-wrapper
 
+    height 600px
 
+    .app-device
 
-
+      transform scale(1)
+      position relative
+      bottom 100px
+      left 50px
+      .app-phone
+        display block
+        position absolute
+        width 297px
+      .app-carousel
+        position relative
+        top 70px
+        left 19px
+        width 257px
+    .app-text
+      lost-column 5/12
+      background none
+      padding 20px
+      text-align left
+      padding-top 100px
 
 
 /////////////// > 1300

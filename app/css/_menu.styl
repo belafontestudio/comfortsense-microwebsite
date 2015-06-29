@@ -113,3 +113,72 @@
     li.active
       background rgba(52, 73, 94, 1.0)
       border-bottom 4px solid light_blue
+
+
+
++above(900px)
+
+  #menu
+    background dark_bg
+    height 83px
+    text-align center
+
+    *
+      max-height 83px
+
+    .blu
+      width 1024px
+      background-color dark_bg
+      margin 0 auto
+    .ham
+      display none
+
+      #ham
+        display none
+      #ham-logo
+        padding 15px
+        position relative
+        left 20px
+
+    .main-menu
+
+      display block
+      ul
+
+        li
+          display inline-block
+          vertical-align middle
+          &:hover
+            background rgba(52, 73, 94, 1.0)
+            border-bottom 4px solid light_blue
+
+
+
++above(1050px)
+  #menu
+
+    height 85px
+
+    #sticky
+      background-color dark_bg
+      width 100%
+
+    .main-menu
+
+
+      display block
+      ul
+        margin 0
+        padding 10px
+        list-style none
+        #logo
+          padding-right 200px
+        li
+          display inline-block
+          vertical-align middle
+          padding 10px 10px
+          cursor pointer
+          text-transform uppercase
+        li.active
+          background rgba(52, 73, 94, 1.0)
+          border-bottom 4px solid light_blue
