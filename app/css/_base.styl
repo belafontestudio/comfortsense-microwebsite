@@ -9,11 +9,16 @@ light_blue = #63C7EA;
 button_blue = #28A6DB;
 
 
+*
+  &:focus
+    outline 0
+
 
 html, body
   //lost-utility edit
   -webkit-overflow-scrolling touch
-  font-smooth antialiased
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
   border 0
   margin 0
   width 100%
@@ -47,11 +52,11 @@ h1, h2
 
 
 
-
-.owl-pagination
-  .active
++above(600px)
+  .owl-pagination
+    .active
+      span
+        background whitesmoke !important
     span
-      background whitesmoke !important
-  span
-    background transparent !important
-    border 2px solid whitesmoke
+      background transparent !important
+      border 2px solid whitesmoke

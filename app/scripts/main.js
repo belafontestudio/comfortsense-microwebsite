@@ -8,12 +8,22 @@ $(document).ready(function() {
 
 
   $('#sticky').stickyNavbar();
+
+
+
+
+
+
 });
+
 
 
 $(window).resize(function() {
 
   livingResize();
+  Location.reload();
+
+
 });
 
 
@@ -48,6 +58,13 @@ enquire.register("screen and (max-width: 599px)", {
       $('.gallery-hero').data('owlCarousel').destroy()
     }
   //  $('.gallery-hero').data('owlCarousel').destroy();
+
+
+  var isiPad = navigator.userAgent.match(/iPad/i) != null;
+
+    if(isiPad){
+    jPM.off();
+  }
   }
 
 
