@@ -103,6 +103,7 @@
 .main-menu
   background-color dark_bg
   display none
+  font-weight 200
   a
     text-decoration none
     display block
@@ -118,7 +119,8 @@
     #logo
       padding 20px 10px
 
-    a
+    .hover
+      border-bottom 4px solid dark_bg
       &:hover
         background rgba(52, 73, 94, 1.0)
         border-bottom 4px solid light_blue
@@ -130,6 +132,11 @@
 
 
 
+.btn
+  .active
+    background transparent !important
+    border-bottom 0 !important
+
 +above(900px)
 
   #menu
@@ -137,8 +144,12 @@
 
     text-align center
 
-    *
-      max-height 83px
+    #sticky
+      background-color dark_bg
+      width 100%
+      border-bottom 1px solid #3E4853
+      box-shadow 0 1px 2px 2px rgba(0,0,0,.2)
+
 
     .blu
       width 1024px
@@ -155,16 +166,30 @@
         left 20px
 
     .main-menu
-
+      // border-bottom 1px solid #3E4853
+      // box-shadow 0 1px 2px 2px rgba(0,0,0,.2)
       display block
+
+      a
+        padding 14px 10px
       ul
         padding 0
 
+        #logo
+          padding 10px 10px 5px 10px
+          //background black
         li
           display inline-block
           vertical-align middle
 
-
+          .btn
+            a
+              padding 0
+        #social
+          a
+            padding 0 10px 0 0 !important
+            position relative
+            top 6px
 
 
 +above(1050px)
@@ -173,17 +198,25 @@
     #sticky
       background-color dark_bg
       width 100%
+      border-bottom 1px solid #3E4853
+      box-shadow 0 1px 2px 2px rgba(0,0,0,.2)
 
     .main-menu
-
+      border-bottom 0
+      box-shadow 0
 
       display block
+
+      a
+        padding 14px 15px
       ul
         margin 0
         list-style none
         #logo
           padding-right 20px
           text-align left
+        #social
+          padding-left 50px
         li
           display inline-block
           vertical-align middle
