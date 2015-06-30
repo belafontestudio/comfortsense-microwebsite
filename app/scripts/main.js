@@ -21,7 +21,7 @@ $(document).ready(function() {
 $(window).resize(function() {
 
   livingResize();
-  Location.reload();
+  document.location.reload(true);
 
 
 });
