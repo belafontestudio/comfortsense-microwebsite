@@ -5,9 +5,26 @@ $(document).ready(function() {
   initLiving();
   initApp();
   livingResize();
+  iPadFIx()
 
 
-  $('#sticky').stickyNavbar();
+  $('#sticky').stickyNavbar({
+    activeClass: "active",          // Class to be added to highlight nav elements
+    sectionSelector: "scrollto",    // Class of the section that is interconnected with nav links
+    animDuration: 250,              // Duration of jQuery animation
+
+    animateCSS: true,               // AnimateCSS effect on/off
+    animateCSSRepeat: false,        // Repeat animation everytime user scrolls
+    cssAnimation: "fadeInDown",     // AnimateCSS class that will be added to selector
+
+    jqueryAnim: "show",        // jQuery animation type: fadeIn, show or slideDown
+
+    mobile: true,                  // If false nav will not stick under 480px width of window
+
+    stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
+    unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
+  });
+
 
 
 
@@ -21,10 +38,23 @@ $(document).ready(function() {
 $(window).resize(function() {
 
   livingResize();
-  document.location.reload(true);
+  iPadFIx();
+//  document.location.reload(true);
 
 
 });
+
+
+
+
+function iPadFIx(){
+  var isiPad = navigator.userAgent.match(/iPad/i) != null;
+
+    if(isiPad){
+      console.log('iPad');
+      $('html').removeClass('jPanelMenu')
+    }
+}
 
 
 
@@ -60,11 +90,11 @@ enquire.register("screen and (max-width: 599px)", {
   //  $('.gallery-hero').data('owlCarousel').destroy();
 
 
-  var isiPad = navigator.userAgent.match(/iPad/i) != null;
-
-    if(isiPad){
-    jPM.off();
-  }
+  // var isiPad = navigator.userAgent.match(/iPad/i) != null;
+  //
+  //   if(isiPad){
+  //   jPM.off();
+  // }
   }
 
 
@@ -129,8 +159,14 @@ function initApp(){
 
 
 function livingResize(){
-  var altezzaLiving = $('.living-lab-carousel').height();
+  setTimeout(function() {
 
-  $('.living-lab-image').height(altezzaLiving);
-  console.log(altezzaLiving)
+
+
+    var altezzaLiving = $('.living-lab-carousel').height();
+
+    $('.living-lab-image').height(altezzaLiving-1);
+    console.log(altezzaLiving);
+
+  }, 1000);
 }
