@@ -9,6 +9,8 @@ $(document).ready(function() {
 
   $('img').dense();
 
+  $('html').removeClass('jPanelMenu')
+
 
   $('#sticky').stickyNavbar({
     activeClass: "active",          // Class to be added to highlight nav elements
@@ -49,14 +51,10 @@ $(window).resize(function() {
 
 
 
-function iPadFIx(){
-  var isiPad = navigator.userAgent.match(/iPad/i) != null;
 
-    if(isiPad){
-      console.log('iPad');
-      $('html').removeClass('jPanelMenu')
-    }
-}
+
+
+
 
 
 
@@ -106,6 +104,7 @@ enquire.register("screen and (min-width: 900px)", {
 
   match: function(){
     jPM.off();
+    $('html').removeClass('jPanelMenu')
 
 
 
@@ -120,6 +119,7 @@ enquire.register("screen and (max-width: 899px)", {
 
   match: function(){
     jPM.on();
+    $('html').removeClass('jPanelMenu')
 
 
   }
