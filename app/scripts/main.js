@@ -5,7 +5,9 @@ $(document).ready(function() {
   initLiving();
   initApp();
   livingResize();
-  iPadFIx()
+  iPadFIx();
+
+  $('img').dense();
 
 
   $('#sticky').stickyNavbar({
