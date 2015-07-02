@@ -8,6 +8,10 @@ body
 // Init
 
 
+.owl-pagination
+  padding-top 50px
+    z-index: 3000;
+
 #esperienza
   background url(../images/hero-texture.png)
 
@@ -24,9 +28,10 @@ body
       padding-top 40px
       vertical-align middle
       img
-        max-height 300px
-        &:last-child
-          max-width 260px
+        //max-height 300px
+        // &:last-child
+        //   max-width 200px
+        max-width 100%
 
 
     .gallery-hero-text
@@ -134,7 +139,6 @@ body
     p
       font-weight 200
 
-
 .partners-wrapper
   text-align center
   padding 50px
@@ -164,8 +168,9 @@ body
 
 
 
-
-
++below(600px)
+  .app-device
+    padding-bottom 30px
 
 
 
@@ -173,6 +178,8 @@ body
 
 +above(600px)
 
+  .owl-pagination
+    padding-top 0
 
   span
     display inline-block
@@ -372,8 +379,6 @@ body
 
 +above(1000px)
 
-  .owl-pagination
-    padding-top 50px
 
   .app-wrapper
 
