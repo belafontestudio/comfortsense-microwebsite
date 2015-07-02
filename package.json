@@ -24,7 +24,6 @@
     "autoprefixer": "^5.2.0",
     "clean-css-brunch": "^1.7.2",
     "css-brunch": "^1.7.0",
-    "imageoptmizer-brunch": "0.0.6",
     "jade-pages-brunch": "^1.7.9",
     "javascript-brunch": "^1.7.1",
     "lost": "^6.4.0",

@@ -44,9 +44,7 @@ exports.config =
                 css: on
                 assets: off
 
-        imageoptimizer:
-            path: 'images'
-            smushit: no
+
 
     conventions:
         assets: /(assets|vendor\/assets|font)/
