@@ -5,7 +5,7 @@ $(document).ready(function() {
   initLiving();
   initApp();
   livingResize();
-  iPadFIx();
+  //iPadFIx();
 
   $('img').dense();
 
@@ -42,7 +42,7 @@ $(document).ready(function() {
 $(window).resize(function() {
 
   livingResize();
-  iPadFIx();
+    $('html').removeClass('jPanelMenu')
 //  document.location.reload(true);
 
 
@@ -104,7 +104,6 @@ enquire.register("screen and (min-width: 900px)", {
 
   match: function(){
     jPM.off();
-    $('html').removeClass('jPanelMenu')
 
 
 
@@ -119,7 +118,6 @@ enquire.register("screen and (max-width: 899px)", {
 
   match: function(){
     jPM.on();
-    $('html').removeClass('jPanelMenu')
 
 
   }
