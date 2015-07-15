@@ -11,8 +11,7 @@ $(document).ready(function() {
 
   $('html').removeClass('jPanelMenu')
 
-
-  $('#sticky').stickyNavbar({
+     $('#sticky').stickyNavbar({
     activeClass: "active",          // Class to be added to highlight nav elements
     sectionSelector: "scrollto",    // Class of the section that is interconnected with nav links
     animDuration: 250,              // Duration of jQuery animation
@@ -23,7 +22,8 @@ $(document).ready(function() {
 
     jqueryAnim: "show",        // jQuery animation type: fadeIn, show or slideDown
 
-    mobile: true,                  // If false nav will not stick under 480px width of window
+    mobile: false,
+    mobileWidth: 900,                  // If false nav will not stick under 480px width of window
 
     stickyModeClass: "sticky",      // Class that will be applied to 'this' in sticky mode
     unstickyModeClass: "unsticky"   // Class that will be applied to 'this' in non-sticky mode
@@ -42,7 +42,7 @@ $(document).ready(function() {
 $(window).resize(function() {
 
   livingResize();
-    $('html').removeClass('jPanelMenu')
+  $('html').removeClass('jPanelMenu')
 //  document.location.reload(true);
 
 
@@ -71,7 +71,8 @@ enquire.register("screen and (min-width: 600px)", {
 
     initGalleryHero();
 
-
+    
+ 
 
 
   }
