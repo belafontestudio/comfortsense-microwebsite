@@ -27,26 +27,27 @@ html.no-js(lang="en")
     block menu
       include partials/_menu.jade
     
-    #esperienza.scrollto
-      block gallery_hero
-        include partials/_gallery_hero.jade
-        include partials/_ilprogetto.jade
+    #numeri-1.scrollto
+      block numeri-1
+        include partials/sperimentazione/01_numeri.jade
+        
     
-    #livinglab-s.scrollto
-      block living_lab
-        include partials/_living_lab.jade
+    #partecipanti.scrollto
+      block partecipanti
+        include partials/sperimentazione/02_partecipanti.jade
     
-    #ecosistema.scrollto
-      block ecosistema
-        include partials/_ecosystem.jade
+    #numeri-2.scrollto
+      block numeri-2
+        include partials/sperimentazione/03_numeri.jade
       
-    block app
-      include partials/_app.jade
     
-    #partner.scrollto
-      block partners
-        include partials/_partners.jade
+    #comfort.scrollto
+      block comfort
+        include partials/sperimentazione/04_comfort.jade
   
+    #accesso.scrollto
+      block accesso
+        include partials/sperimentazione/05_accesso.jade
   
   
     footer
